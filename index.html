@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+	<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+	<script>
+	  	// Initialize Firebase
+	  	var config = {
+		    apiKey: "AIzaSyBcfXqS2SsSw2Ac0nZhonFbXwPjcmJ8nkQ",
+		    authDomain: "usuarios-e855f.firebaseapp.com",
+		    databaseURL: "https://usuarios-e855f.firebaseio.com",
+		    projectId: "usuarios-e855f",
+		    storageBucket: "usuarios-e855f.appspot.com",
+		    messagingSenderId: "177945242180"
+	  	};
+	  	firebase.initializeApp(config);
+	</script>
+</head>
+<body>
+	<div class="container mt-3">
+		<nav class="navbar navbar-dark bg-dark justify-content-between">
+      <a class="navbar-brand">Navbar</a>
+      <div class="form-inline">
+				<input class="form-control form-control-sm mr-sm-2" id="email2" type="email2" placeholder="ingresa email">
+				<input class="form-control form-control-sm mr-sm-2" id="contraseña2" type="password" placeholder="ingrese su contraseña">
+				<button class="btn btn-light my-2 my-sm-0 btn-sm" onclick="ingresar()" >Acceder</button>
+        <button class="btn btn-danger my-2 my-sm-0 btn-sm ml-2" data-toggle="modal" data-target="#exampleModal">Registrar</button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Formulario de Registro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <input class="form-control" id="email" type="email" placeholder="ingresa email">
+                <div class="mt-2"></div>
+                <input class="form-control" id="contraseña" type="password" placeholder="ingrese su contraseña">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="register()" >Guardar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+		</nav>
+  </div>
+  
+
+
+
+
+
+
+	<div id="contenido">
+		
+		</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+	<script src="assets/js/login.js"></script>
+</body>
+</html>
